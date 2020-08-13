@@ -9,7 +9,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Gannt</title>
-    <script type="text/javascript" src="/g/js/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="js/moment-with-locales.min.js"></script>
 </head>
 <body>
 <div class="chart-wrapper">
@@ -70,8 +70,8 @@
     }
 
     function createRange(startDate, stopDate) {
-        var dateArray = new Array();
-        var currentDate = startDate;
+        const dateArray = [];
+        let currentDate = startDate;
         while (currentDate <= stopDate) {
             dateArray.push(new Date(currentDate));
             currentDate = currentDate.addDays(1);
